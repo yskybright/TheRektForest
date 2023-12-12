@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,8 +8,10 @@ public class PlayerInputContoller : TopDownCharacterController
 {
     private Camera _camera;
 
-    private void Awake()
+    
+    protected override void Awake()
     {
+        base.Awake();
        _camera = Camera.main;
     }
 
@@ -29,6 +32,10 @@ public class PlayerInputContoller : TopDownCharacterController
             CallLookEvent(newAim);
         }
 
+    }
+    public void OnFire(InputValue value)
+    {
+        IsAttacking = value.isPressed;
     }
 
 }
