@@ -9,14 +9,12 @@ public class StartSceneUI : MonoBehaviour
     public GameObject Status;
     public GameObject Inventory;
 
-    // Start is called before the first frame update
     void Start()
     {
         Status.SetActive(false);
         Inventory.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         

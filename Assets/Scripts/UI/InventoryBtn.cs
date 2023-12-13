@@ -19,7 +19,6 @@ public class InventoryBtn : MonoBehaviour
     public GameObject equip_shield;
     public GameObject equip_armor;
 
-    // Start is called before the first frame update
     void Start()
     {
         equip_newbow.SetActive(false);
@@ -28,12 +27,8 @@ public class InventoryBtn : MonoBehaviour
         equip_armor.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    // 각 item별로 장착/해제 팝업이 나오도록 설정
+    #region _NewBow
     public void OnClickNewbow()
     {
         if (equip_newbow.activeSelf == false)
@@ -57,8 +52,9 @@ public class InventoryBtn : MonoBehaviour
         equip_newbow.SetActive(false);
         newbow_equipped.SetActive(false);
     }
+    #endregion
 
-
+    #region _Dagger
     public void OnClickDagger()
     {
         if (equip_dagger.activeSelf == false)
@@ -82,7 +78,9 @@ public class InventoryBtn : MonoBehaviour
         equip_dagger.SetActive(false);
         dagger_equipped.SetActive(false);
     }
+    #endregion
 
+    #region _Shield
     public void OnClickShield()
     {
         if (equip_shield.activeSelf == false)
@@ -105,7 +103,9 @@ public class InventoryBtn : MonoBehaviour
         equip_shield.SetActive(false);
         shield_equipped.SetActive(false);
     }
+    #endregion
 
+    #region _Armor
     public void OnClickArmor()
     {
         if (equip_armor.activeSelf == false)
@@ -129,8 +129,9 @@ public class InventoryBtn : MonoBehaviour
         equip_armor.SetActive(false);
         armor_equipped.SetActive(false);
     }
+    #endregion
 
-
+    // quit 버튼을 누르면 어떤 창이든 꺼짐
     public void OnClickQuit()
     {
         newbow_equipped.SetActive(false);
