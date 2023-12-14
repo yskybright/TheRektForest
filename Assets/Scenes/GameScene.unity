@@ -553,7 +553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162116656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0.308, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -603,7 +603,7 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: bbcb4638c11add94a94c6aff5d81ce42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.875, y: 1.625}
@@ -37411,6 +37411,21 @@ MonoBehaviour:
   - {fileID: 1329664665749242187, guid: 3a6e0fe9bfe1cd841ad1fa54273ec90a, type: 3}
   spawnPositionsRoot: {fileID: 1177486776}
   playerTag: Player
+  rewards:
+  - {fileID: 2429689507789409689, guid: 3ed684dd7e951db46be3ffcc6707d6b1, type: 3}
+  - {fileID: 5162501935943834353, guid: 92a8a8430838dce449c30e65965f3b95, type: 3}
+  - {fileID: 7559937345149457128, guid: 56cd7fadfb8c45347b2b1154f6832018, type: 3}
+  - {fileID: 7559937345149457128, guid: 56cd7fadfb8c45347b2b1154f6832018, type: 3}
+  defaultStats:
+    statsChangeType: 0
+    maxHealth: 0
+    speed: 0
+    attackSO: {fileID: 11400000, guid: e92b338e714ce9c438a6b868d511dec2, type: 2}
+  rangedStats:
+    statsChangeType: 0
+    maxHealth: 0
+    speed: 0
+    attackSO: {fileID: 11400000, guid: 6ece57ff2a476064697172a8a12d182a, type: 2}
 --- !u!1 &2023887520
 GameObject:
   m_ObjectHideFlags: 0
