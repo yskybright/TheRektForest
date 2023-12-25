@@ -27,7 +27,7 @@ public class PlayerInputContoller : TopDownCharacterController
         Vector2 worldPos = _camera.ScreenToWorldPoint(newAim);
         newAim = (worldPos - (Vector2)transform.position).normalized;
 
-        if (newAim.magnitude >= 0.9f)
+        if (newAim.magnitude >= 0.0f)
         {
             CallLookEvent(newAim);
         }
