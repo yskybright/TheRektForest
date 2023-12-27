@@ -1,3 +1,5 @@
+유건희_심화주차 개인 프로젝트
+
 # ZepDungeon
 TopDown mini RPG game, assignment for Unity Bootcamp 2023.
 
@@ -9,7 +11,7 @@ TopDown mini RPG game, assignment for Unity Bootcamp 2023.
 
 
 ---
-## ⭐ 구현 사항 (Unity 숙련_개인과제)
+## ⭐ 구현 사항 
 
 1. 필수요구사항 
 
