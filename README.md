@@ -24,7 +24,7 @@ Personal Assignment for Unity Bootcamp 2023.
 ---
 ## ⭐ 필수 요구 사항
 
-1. 인트로 씬
+### 1. 인트로 씬
 
    1-1. 게임 소개 버튼
    
@@ -129,11 +129,11 @@ Personal Assignment for Unity Bootcamp 2023.
    
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Player의 체력을 5 회복시킵니다.
 
-   4-1-1. Blue Potion
+   4-1-2. Blue Potion
    
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Player의 투사체를 강화합니다.
 
-   4-1-1. Green Potion
+   4-1-3. Green Potion
    
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Player의 최대 체력을 5 증가시키며 일시적으로 속도를 증가시킵니다.
 
