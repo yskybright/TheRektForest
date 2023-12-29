@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CharacterStats defaultStats;
     [SerializeField] private CharacterStats rangedStats;
 
+    public GameObject player;
 
     private void Awake()
     {
@@ -89,7 +90,6 @@ public class GameManager : MonoBehaviour
                     waveSpawnCount += 1;
                 }
 
-
                 for (int i = 0; i < waveSpawnPosCount; i++)
                 {
                     int posIdx = Random.Range(0, spawnPositions.Count);
@@ -104,10 +104,8 @@ public class GameManager : MonoBehaviour
                         yield return new WaitForSeconds(spawnInterval);
                     }
                 }
-
                 currentWaveIndex++;
             }
-
             yield return null;
         }
     }
@@ -126,6 +124,7 @@ public class GameManager : MonoBehaviour
     {
         gameOverUI.SetActive(true);
         StopAllCoroutines();
+        player.SetActive(false);
     }
 
     private void UpdateWaveUI()
@@ -140,7 +139,7 @@ public class GameManager : MonoBehaviour
 
     public void ExitGame()
     {
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene("Lobby");
     }
 
     void CreateReward()
