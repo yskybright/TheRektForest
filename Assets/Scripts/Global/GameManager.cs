@@ -69,12 +69,12 @@ public class GameManager : MonoBehaviour
                 UpdateWaveUI();
                 yield return new WaitForSeconds(2f);
 
-                if (currentWaveIndex % 20 == 0)
+                if (currentWaveIndex % 5 == 0)
                 {
                     RandomUpgrade();
                 }
 
-                if (currentWaveIndex % 10 == 0)
+                if (currentWaveIndex % 3 == 0)
                 {
                     waveSpawnPosCount = waveSpawnPosCount + 1 > spawnPositions.Count ? waveSpawnPosCount : waveSpawnPosCount + 1;
                     waveSpawnCount = 0;
@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
                     CreateReward();
                 }
 
-                if (currentWaveIndex % 3 == 0)
+                if (currentWaveIndex % 2 == 0)
                 {
                     waveSpawnCount += 1;
                 }

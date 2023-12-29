@@ -23,8 +23,8 @@ MonoBehaviour:
   knockbackPower: 0
   knockbackTime: 0
   bulletNameTag: 
-  duration: 0
-  spread: 0
+  duration: 1
+  spread: 0.5
   numberofProjectilesPershot: 3
   multipleProjectilesAngle: 0
-  projectileColor: {r: 0, g: 0, b: 0, a: 0}
+  projectileColor: {r: 1, g: 1, b: 1, a: 0}

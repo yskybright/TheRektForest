@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1474462853127135605
 SpriteRenderer:
@@ -150,6 +150,6 @@ MonoBehaviour:
   pickupSound: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
   statsModifier:
   - statsChangeType: 0
-    maxHealth: 10
+    maxHealth: 6
     speed: 0
     attackSO: {fileID: 0}

@@ -148,4 +148,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   pickupSound: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  healValue: 10
+  healValue: 5
