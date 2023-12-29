@@ -14,10 +14,10 @@ Personal Assignment for Unity Bootcamp 2023.
 
    🔹개인과제 시연영상 ) https://youtu.be/yN79vQnKJQw
 
-<img src="https://github.com/yskybright/TheRektForest/assets/148968024/ea03b0cc-81fd-4ad2-aa45-40920c461ba8.png" width="500" height="300"/>
-<img src="https://github.com/yskybright/TheRektForest/assets/148968024/7ab6edbb-ffac-4882-832c-264d6a3ee02e.png" width="500" height="300"/>
-<img src="https://github.com/yskybright/ZepDungeon/assets/148968024/9d5a03b4-b575-46a9-b846-f470db34e69e.png" width="500" height="300"/>
-<img src="https://github.com/yskybright/TheRektForest/assets/148968024/dbe3785d-4760-4b70-ab60-a6a404001f35.png" width="500" height="300"/>
+<img src="https://github.com/yskybright/TheRektForest/assets/148968024/ea03b0cc-81fd-4ad2-aa45-40920c461ba8.png" width="400" height="240"/>
+<img src="https://github.com/yskybright/TheRektForest/assets/148968024/7ab6edbb-ffac-4882-832c-264d6a3ee02e.png" width="400" height="240"/>
+<img src="https://github.com/yskybright/ZepDungeon/assets/148968024/9d5a03b4-b575-46a9-b846-f470db34e69e.png" width="400" height="240"/>
+<img src="https://github.com/yskybright/TheRektForest/assets/148968024/dbe3785d-4760-4b70-ab60-a6a404001f35.png" width="400" height="240"/>
 
 
 
