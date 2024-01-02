@@ -15,11 +15,6 @@ public class LobbyUI : MonoBehaviour
         Inventory.SetActive(false);
     }
 
-    void Update()
-    {
-        
-    }
-
     public void OnClickStatus()
     {
         StartSceneButtons.SetActive(false);

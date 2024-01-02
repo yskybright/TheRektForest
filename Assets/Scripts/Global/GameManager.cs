@@ -9,12 +9,17 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    // 플레이어
     private HealthSystem playerHealthSystem;
 
     [SerializeField] private TextMeshProUGUI waveText;
     [SerializeField] private Slider hpGaugeSlider;
     [SerializeField] private GameObject gameOverUI;
 
+    public Transform Player { get; private set; }
+    [SerializeField] private string playerTag = "Player";
+
+    // 웨이브
     [SerializeField] private int currentWaveIndex = 0;
     private int currentSpawnCount = 0;
     private int waveSpawnCount = 0;
@@ -23,17 +28,17 @@ public class GameManager : MonoBehaviour
     public float spawnInterval = .5f;
     public List<GameObject> enemyPrefebs = new List<GameObject>();
 
+    // 적 출현
     [SerializeField] private Transform spawnPositionsRoot;
     private List<Transform> spawnPositions = new List<Transform>();
 
-    public Transform Player { get; private set; }
-    [SerializeField] private string playerTag = "Player";
-
+    // 아이템
     public List<GameObject> rewards = new List<GameObject>();
 
     [SerializeField] private CharacterStats defaultStats;
     [SerializeField] private CharacterStats rangedStats;
 
+    // 게임 종료
     public GameObject player;
 
     private void Awake()
@@ -120,16 +125,17 @@ public class GameManager : MonoBehaviour
         currentSpawnCount--;
     }
 
+    private void UpdateWaveUI()
+    {
+        waveText.text = (currentWaveIndex + 1).ToString();
+    }
+
+    // 게임 종료 시
     private void GameOver()
     {
         gameOverUI.SetActive(true);
         StopAllCoroutines();
         player.SetActive(false);
-    }
-
-    private void UpdateWaveUI()
-    {
-        waveText.text = (currentWaveIndex + 1).ToString();
     }
 
     public void RestartGame()
@@ -141,6 +147,8 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Lobby");
     }
+
+
 
     void CreateReward()
     {
